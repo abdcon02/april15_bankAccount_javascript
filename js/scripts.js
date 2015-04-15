@@ -25,21 +25,31 @@ var BankAccount = {
 
 
 $(function() {
+    var accounts = [];
+    var foundAccount;
     $("form#create_account").submit(function(event) {
         event.preventDefault();
         var name = $("#account_name").val();
-
-
-
-        var accounts = [];
         var userAccount = Object.create(BankAccount);
-
-
         userAccount.name = name;
+
+
+
         $("#account_name").val("");
 
         $("#accounts").show();
         $("#account_list").append("<li>" + name + "</li>");
+
+        accounts.push(userAccount);
+        console.log(accounts);
+        accounts.forEach(function(account) {
+        console.log(account.name);
+            if (account.name == $("#account_list").text()) {
+            foundAccount = account;
+            }
+        });
+        console.log($("#account_list").text());
+        console.log(foundAccount);
 
         $('#home-btn').click(function() {
             $('#current_account').hide();
@@ -51,7 +61,6 @@ $(function() {
             $('#accounts').hide();
             $('#current_account').show();
             $('#current_account h3').text(userAccount.name + "'s balance: $" + userAccount.balance);
-            hidden = userAccount.name;
         });
 
         $("form#deposit_amount").submit(function(event) {
