@@ -1,0 +1,26 @@
+.jumbotron {
+    background-color: #A9D0F5;
+    !important;
+}
+
+#accounts, #current_account {
+    display: none;
+}
+
+#transaction {
+    color: red;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+    color: blue;
+}
