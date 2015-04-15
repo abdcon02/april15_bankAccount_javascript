@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>A &amp; F Bank</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-4"></div>
+            <div class="col-xs-6 col-sm-4">
+              <h1 class="jumbotron">A &amp; F Bank</h1>
+
+              <form id="create_account">
+                <div class="form-group">
+                    <label for="account_name">Enter Name for New Account:</label>
+                    <input id="account_name" type="text" required class="form-control">
+                </div>
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-info btn-md">
+                    <span class="glyphicon glyphicon-plus"></span> Add Account
+                    </button>
+                </div>
+              </form>
+
+              <div id="accounts">
+                  <h3>Login:</h3>
+                  <ul id="account_list">
+                  </ul>
+              </div>
+              <div id="current_account">
+                  <h3></h3>
+
+                  <form id="deposit_amount">
+                    <div class="form-group">
+                        <label for="deposit">Deposit Amount:</label>
+                        <input id="deposit" type="text" required class="form-control">
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-success btn-md">
+                        <span class="glyphicon glyphicon-plus"></span> Deposit
+                        </button>
+                    </div>
+                  </form>
+                  <form id="withdraw_amount">
+                    <div class="form-group">
+                        <label for="withdraw">Withdraw Amount:</label>
+                        <input id="withdraw" type="text" required class="form-control">
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-danger btn-md">
+                        <span class="glyphicon glyphicon-minus"></span> Withdraw
+                        </button>
+                    </div>
+                  </form>
+
+
+
+              </div>
+
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-4"></div>
+        </div>
+    </div>
+</body>
+</html>
