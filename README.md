@@ -1,4 +1,4 @@
-# Assessment 5: Triangles for Epicodus
+# BankAccount App for Epicodus
 ## by Patrick Fiorentino & Connor Abdelnoor
 ### Date: April 15th, 2015
 #### Description
@@ -8,7 +8,7 @@ accounts.
 
 #### Setup instructions
 1. Clone this git repository
-2. Start the web app by opening triangle.html in your browser.
+2. Start the web app by opening account.html in your browser.
 
 #### Copyright © 2015, Patrick Fiorentino & Connor Abdelnoor
 
